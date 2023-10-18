@@ -1,0 +1,38 @@
+.App{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.App .line-separator{
+    display: flex;
+    flex-direction: row;
+}
+
+.App.line-separator header{
+    width: 250px;
+    height: 100vh;
+}
+
+.App .line-separator .main-content{
+    margin-left: 270px;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+@media only screen and (max-width:999.98px) {
+    .App .line-separator{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .App.line-separator header{
+       display: none;
+    }
+    
+    .App .line-separator .main-content{
+        padding: 30px 20px;
+        width: 100%;
+    }
+}
